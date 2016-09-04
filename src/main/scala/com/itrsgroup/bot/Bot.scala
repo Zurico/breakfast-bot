@@ -1,15 +1,8 @@
 package com.itrsgroup.bot
 
-import com.flyberrycapital.slack.SlackClient
+case class Bot(token:String, name:String) {
 
-object Bot {
+  val client = new SlackClient(token, name)
 
-  val token = ""
-
-  def run():Unit = {
-
-    val client = new SlackClient(token)
-
-  }
 
 }
