@@ -7,3 +7,11 @@ This is an slack bot to manage breakfast time (or as we call it, pitufo time) as
 ```
 sbt run
 ```
+
+## Publish
+
+
+```
+sbt universal:packageBin`
+# Go then to <root>/target/universal/breakfast-bot-<version>.zip
+``
