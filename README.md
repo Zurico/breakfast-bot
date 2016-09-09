@@ -12,6 +12,6 @@ sbt run
 
 
 ```
-sbt universal:packageBin`
+sbt universal:packageBin
 # Go then to <root>/target/universal/breakfast-bot-<version>.zip
-``
+```
