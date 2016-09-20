@@ -28,13 +28,8 @@ class SlackClient(token:String, name:String) {
   private def api(method:String, params:Seq[(String, String)] = Seq.empty) =
     normalizeResponse(Http("https://slack.com/api/" + method).postForm(normalizeParams(params)).asString.body)
 
-  private def _postMessage(msg:String, im:String) = {
-
-    //println(Seq(("text", msg), ("username", name), ("channel", im)))
-
+  private def _postMessage(msg:String, im:String) =
     api("chat.postMessage", Seq(("text", msg), ("username", name), ("channel", im)))
-
-  }
 
   private def openIM(userID:String) = {
 

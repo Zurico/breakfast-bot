@@ -10,6 +10,7 @@
  *
  * zuri pabon <zpabon@itrsgroup.com>
  */
+import com.itrsgroup.bot.Settings
 import com.itrsgroup.bot.Bot
 
 /*
@@ -18,9 +19,6 @@ import com.itrsgroup.bot.Bot
  */
 object App {
 
-  val token = "<my_bot_token>"
-  val username = "pitufo-bot"
-
-  def main(args: Array[String]):Unit = Bot(token, username)
+  def main(args:Array[String]):Unit = Bot(Settings.token, Settings.username)
 
 }
